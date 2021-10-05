@@ -1,0 +1,169 @@
+.search {
+    margin: 0;
+}
+.overlay
+    {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,.6);
+    }
+.modal
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        width: 390px;
+        height: 300px;
+        background: white;
+        border-radius: 15px;
+        font-family: Arial,sans-serif;
+        position: relative;
+        animation-name: modalIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes modalIn
+    {
+        from
+        {
+            transform:translateY(-1000px)
+        }
+        40%
+        {
+            transform: translateY(10px);
+        }
+        60%
+        {
+            transform: translateY(-10px);
+        }
+        80%
+        {
+            transform: translateY(5px);
+        }
+        to
+        {
+            transform: translateY(0);
+        }
+    }
+    @keyframes modalOut
+    {
+        from
+        {
+            transform: translateY(0);
+        }
+        40%
+        {
+            transform: translateY(10px);
+        }
+        60%
+        {
+            transform: translateY(-10px);
+        }
+        80%
+        {
+            transform: translateY(5px);
+        }
+        to
+        {
+            transform:translateY(-1000px)
+        }
+    }
+    .close
+    {
+        width: 30px;
+        height: 30px;
+        background: red;
+        line-height: 30px;
+        color: white;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .close:active
+    {
+        transform: scale(.9);
+    }
+    .botones button
+    {
+        width: 100px;
+        height: 40px;
+        margin:10px;
+        font-size: 1.1em;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+    }
+    .botones button:active
+    {
+        transform: scale(.9);
+    }
+    #next
+    {
+        background: green;
+    }
+    #before
+    {
+        background: red;
+    }
+    .image
+    {
+        width: 130px;
+        height: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    .name
+    {
+        width: 150px;
+        height: 30px;
+        font-size: 1.2em;
+    }
+
+/*---------------------------------------*/
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    margin: auto;
+}
+
+#poke-container {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+#header-container {
+    border-radius: 0px !important;
+}
+
+#header-text{
+    margin: 0 auto;
+}
+
+#generate-pokemon {
+    margin: 0 auto;
+}
+
+#delete-btn {
+    position: absolute;
+    left: 85%;
+    display: none;
+    margin-bottom: 5%;
+}
