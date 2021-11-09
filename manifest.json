@@ -2,7 +2,7 @@
     "name": "PokeApiWeb",
     "short_name": "Poke",
     "description": "App para buscar nuestros pokemons",
-    "display": "fullscreen",
+    "display": "standalone",
     "theme_color": "#d0021b",
     "background_color": "#ffffff",
     "start_url": "https://180648ivanvel.github.io/PokePage/",
