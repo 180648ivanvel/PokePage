@@ -1,12 +1,11 @@
 {
-    "theme_color": "#d0021b",
-    "background_color": "#ffffff",
-    "display": "browser",
-    "scope": "/",
-    "start_url": "https://180648ivanvel.github.io/PokePage/",
     "name": "PokeApiWeb",
     "short_name": "Poke",
     "description": "App para buscar nuestros pokemons",
+    "display": "fullscreen",
+    "theme_color": "#d0021b",
+    "background_color": "#ffffff",
+    "start_url": "https://180648ivanvel.github.io/PokePage/",
     "icons": [
         {
             "src": "manifest/icon-192x192.png",
