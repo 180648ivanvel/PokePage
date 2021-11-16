@@ -19,7 +19,7 @@ self.addEventListener('activate', () => {
     console.log('Se ha activado el serviceworker')
 });
 
-const cacheFirst = (event) => {
+self.addEventListener('fetch', function(event) {
  event.respondWith(
    caches.match(event.request).then((cacheResponse) => {
      return cacheResponse || fetch(event.request).then((networkResponse) => {
@@ -30,4 +30,4 @@ const cacheFirst = (event) => {
      })
    })
  )
-};
+});
